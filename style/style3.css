@@ -1,0 +1,664 @@
+/* tracking and safe relocation  */
+
+
+#style {
+  background: url(../images/hexellence_@2X.png);
+  margin: 0px;
+  font-family: 'reem kufi';
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR BELOW */
+#header_bee2 {
+  z-index: 5;
+  position: fixed;
+  top: 0vh;
+  left: 1%;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+#menu {
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  color: goldenrod;
+  text-shadow: 1px 1px 3px black;
+  text-align: right;
+}
+#navbar {
+  display: none;
+  text-align: right;
+  line-height: normal;
+}
+.navlink {
+  font-size: 25px;
+  color: goldenrod;
+  text-shadow: 1px 1px 1px black;
+}
+#menu:hover #navbar {
+  display: block;
+}
+#menu:hover {
+  color:rgb(203, 217, 243);
+}
+.navlink:hover {
+  color:rgb(203, 217, 243);
+}
+.z_4 {
+  z-index: 4;
+}
+/* NAVBAR ABOVE */
+
+#protection {
+  text-align: left;
+  font-family: reem kufi;
+  font-size: 70px;
+  margin-left: 190px;
+  margin-top: 90px;
+  line-height: 71px;
+  text-shadow: 1px 1px 1px goldenrod;
+  width: 50%;
+}
+
+#pic {
+  background-image: url(../images/whiteFlower2.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-position-y: -650px;
+  height: 55vh;
+  position: absolute; 
+  left: 0.2%;
+  width: 98.5vw;  
+  box-shadow: 1px 1px 10px 1px black;
+
+}
+
+#column1 {
+  font-family: reem kufi;
+  font-size: 32px;
+  text-align: center;
+  position: absolute;
+  top: 70vh;
+  left: 0.2%;
+  border-radius: 50%;
+  border-style: ridge;
+  background:rgb(203, 217, 243);
+  width: 98vw;
+  height: 350px;
+  line-height: 36px;
+}
+
+#col1Words {
+  padding-left: 12%;
+  padding-right: 12%;
+  position: relative;
+  top: 15%;
+}
+
+.column2 { 
+  position: relative;
+  top: 140vh;
+  width: 90vw;
+} 
+
+#deadRose {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -5vh;
+  left: 12%;
+  z-index: 2;
+}
+
+#foodText {
+  width: 70%;
+  height: 40vh;
+  padding: 2%;
+  text-align: center;
+  border-color: goldenrod;
+  border-style: outset;
+  border-radius: 50%;
+  position: relative;
+  top: -50vh;
+  right: -27%;
+  margin: 0%;
+}
+
+#foodTextWords {
+  width: 80%;
+  position: relative;
+  top: 2%;
+  left: 10%;
+  font-size: 125%;
+}
+
+#bee {
+  height: 275px;
+  width: 275px;
+  position: absolute;
+  right: 10%;
+  top: 180vh;
+  margin: 0%;
+}
+
+#beesDying {
+  text-align: center;
+  position: absolute;
+  top: 190vh;
+  left: 15%;
+  font-size: 250%;
+  text-shadow: 2px 2px 1px cornflowerblue;
+}
+
+#bulletList {
+  font-size: 125%;
+  position: relative;
+  top: 115vh;
+  left: 5%;
+  width: 90vw;
+}
+
+li::marker {
+  color: goldenrod;
+}
+
+#wid30 {
+  width: 60%;
+}
+
+.circ_const {
+  text-align: center;
+  box-shadow: 1px 1px 10px 1px black;
+  z-index: 1;
+  background:rgb(203, 217, 243);
+  border-radius: 50%;
+}
+.circle_head {
+  text-shadow: 1px 1px 1px goldenrod;
+}
+
+#beeKeeper {
+  height: 300px;
+  width: 325px;
+  position: relative;
+  top: 125vh;
+  left: 5%;
+}
+
+#beeHive {
+  font-size: 250%;
+  text-shadow: 2px 2px 1px cornflowerblue;
+  position: relative;
+  top: 75vh;
+  left: 50%;
+  width: 50%;
+  margin: 0%;
+}
+
+#contact {
+  position: relative;
+  top: 75vh;
+  right: -52%;
+  width: 40%;
+}
+
+.heading {
+  font-size: 175%;
+  text-shadow: 1px 1px 1px goldenrod;
+  line-height: 100%;
+}
+
+#beeLandmark {
+  position: relative;
+  top: 75vh;
+  right: -45%;
+  width: 50%;
+}
+
+#landmarks {
+  display: block;
+  font-size: 125%;
+  width: 65%;
+  position: relative;
+  top: 72vh;
+  left: 30%;
+  text-align: center;
+  margin: 0%;
+}
+
+#helping {
+  position: relative;
+  top: 72vh;
+  left: 6%;
+  width: 50%;
+}
+
+#reorientate {
+  position: relative;
+  top: 69vh;
+  left: 5%;
+  font-size: 125%;
+  width: 90%;
+  text-align: center;
+  margin: 0%;
+}
+
+#move2 {
+  position: relative;
+  top: 68vh;
+  left: 6%;
+  width: 50%;
+}
+
+#moving {
+  font-size: 125%;
+  width: 60%;
+  position: relative;
+  top: 28vh;
+  left: 6%;
+  text-align: center;
+}
+
+#beeKeeper2 {
+  height: 250px;
+  width: 325px;
+  position: relative;
+  top: 55vh;
+  right: -70%;
+}
+
+
+/* BUTTON BELOW */
+#clickme2 {
+  position: relative;
+  z-index: 2;
+}
+#hexa_bee4 {
+  position: fixed;
+  bottom: -1%;
+  right: 0%;
+  width: 10%;
+  z-index: 2;
+}
+#invo4 {
+  position: fixed;
+  right: 2.5%;
+  bottom: -3.5%;
+  text-shadow: 1px 1px 1px goldenrod;
+}
+#get4 {
+  position: fixed;
+  right: 3.5%;
+  bottom: 12%;
+  text-shadow: 1px 1px 1px goldenrod;
+}
+/* BUTTON ABOVE */
+
+
+/* FOOTER BELOW */
+#foot {
+  text-align: center;
+  position: relative;
+  bottom: -50vh;
+  height: 11vh;
+}
+#contact_info {
+  position: relative;
+  bottom: 20vh;
+  left: 38%;
+  width: 15vw;
+  margin: 0;
+}
+#footer_bee {
+  position: relative;
+  left: -20%;
+  bottom: 3vh;
+}
+#footer_bee:hover {
+  transform: scale(1.1);
+}
+#foot_social {
+  width: 30vw;
+  position: relative;
+  left: 51%;
+  bottom: 34vh;
+}
+.buzz_img {
+  width: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* FOOTER ABOVE */
+
+#logo2 {
+  width: 25%;
+  left: 0px;
+}
+
+.reg_no_show {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #pic {
+    width: 100vw;
+    background-position-y: -250px;
+  }
+  #protection {
+    font-size: 700%;
+    line-height: 150%;
+    position: relative;
+    left: -10%;
+  }
+  #menu {
+    position: fixed;
+    top: 2%;
+    right: 7%;
+    text-align: center;
+    z-index: 2;
+    color: goldenrod;
+    text-shadow: 1px 1px 3px black;    
+  }
+  .navlink {
+    z-index: 4;
+    position: relative;
+    top: -2vh;
+  }
+  #column1 {
+    top: 60vh;
+  }
+  #col1Words {
+    top: 2vh;
+  }
+  .column2 {
+    top: 85vh;
+    height: 40vh;
+  }
+ #deadRose {
+    top: 10vh;
+    left: 0%;
+  }
+  #foodText {
+    width: 85%;
+    height: 30vh;
+    top: -18vh;
+    right: -20%;
+    margin: 0%;
+  }
+   #foodTextWords {
+    width: 65%;
+    top: 5vh;
+    left: 18%;
+    line-height: 150%;
+    margin: 0%;
+  }
+  #bee {
+    top: 130vh;
+  }
+  #beesDying {
+    top: 130vh;
+  }
+  #bulletList {
+    top: 97vh;
+  }
+  #beeKeeper {
+    top: 100vh;
+  }
+  #beeHive {
+    top: 80vh;
+    left: 40%;
+  }
+  #contact {
+    top: 82vh;
+    left: 45%;
+  }
+  #beeLandmark {
+    left: 42%;
+    top: 83vh;
+  }
+  #landmarks {
+    width: 90%;
+    top: 82vh;
+    left: 5%;
+    line-height: 150%;
+  }
+  #helping {
+    top: 85vh;
+  }
+  #reorientate {
+    top: 85vh;
+    line-height: 150%;
+  }
+  #move {
+    display: none;
+  }
+  #move2 {
+    display: block;
+    width: 90%;
+    top: 85vh;
+  }
+  #beeKeeper2 {
+    top: 82vh;
+    right: -62%;
+  }
+  #moving {
+    width: 50%;
+    top: 64vh;
+  }
+  #clickme2 {
+    display: none;
+  }
+  #hexa_bee4 {
+    display: none;
+  }
+  #mobile_get {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: -30px;
+  }
+  #hexa_bee2 {
+    width: 100%;
+  }
+  #invo2 {
+    position: relative;
+    bottom: -120px;
+    text-shadow: 1px 1px 1px #daa520;
+  }
+  #get2 {
+    position: relative;
+    top: 90px;
+    text-shadow: 1px 1px 1px goldenrod;
+  }
+  #foot {
+    text-align: center;
+    position: relative;
+    bottom: -50vh;
+  }
+  #footer_bee {
+    position: relative;
+    bottom: -19vh;
+    left: -40%;
+  }
+  #foot_social {
+    width: 50%;
+    position: relative;
+    bottom: -2vh;
+    left: 40%;
+  }
+  #contact_info {
+    position: relative;
+    bottom: -10vh;
+    left: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #pic {
+    width: 100vw;
+    background-position-y: 0px;
+  }
+  #protection {
+    font-size: 300%;
+    top: -10vh;
+    left: -50%;
+  }
+  #menu {
+    font-size: 35%;
+  }
+  .navlink {
+    font-size: 25%;
+  }
+  #column1 {
+    font-size: 100%;
+    line-height: 100%;
+    height: 50%;
+  }
+  #col1Words {
+    top: 6vh;
+  }
+  #column2 {
+    width: 100%;
+    position: absolute;
+    top: 200vh;
+  }
+  #deadRose {
+    width: 50%;
+    height: auto;
+    top: 34vh;
+  }
+  #foodText {
+    top: 10vh;
+    height: 50%;
+  }
+  #foodTextWords {
+    width: 55%;
+    font-size: 45%;
+    line-height: 100%;
+    top: 3vh;
+    left: 30%;
+  }
+  #bee {
+    width: 50%;
+    height: auto;
+    top: 150vh;
+    right: 0%;
+  }
+  #beesDying {
+    font-size: 100%;
+    top: 150vh;
+    left: 0%;
+  }
+  #bulletList {
+    top: 115vh;
+    left: -5%;
+    font-size: 80%;
+    line-height: 100%;
+  }
+  #beeKeeper {
+    width: 50%;
+    height: auto;
+    top: 118vh;
+  }
+  #beeHive {
+    font-size: 100%;
+    top: 93vh;
+    left: 50%;
+    line-height: 100%;
+  }
+  #contact {
+    font-size: 90%;
+    top: 95vh;
+    left: 55%;
+    line-height: 100%;
+  }
+  #beeLandmark {
+    font-size: 90%;
+    top: 97vh;
+    left: 50%;
+    line-height: 100%;
+  }
+  #landmarks {
+    font-size: 80%;
+    line-height: 100%;
+    top: 96vh;
+  }
+  #helping {
+    font-size: 90%;
+    top: 95vh;
+    width: 100%;
+  }
+  #reorientate {
+    font-size: 80%;
+    line-height: 100%;
+    top: 95vh;
+  }
+  #beeKeeper2 {
+    width: 40%;
+    height: auto;
+    right: -55%;
+    top: 97vh;
+  }
+  #move2 {
+    font-size: 90%;
+    top: 95vh;
+  }
+  #moving {
+    font-size: 80%;
+    line-height: 100%;
+    top: 72vh;
+  }
+  #foot {
+    bottom: -55vh;
+  }
+  #footer_bee {
+    width: 10%;
+
+  }
+  #contact_info {
+    width: 50%;
+    font-size: 50%;
+    line-height: 100%;
+    top: 12vh;
+    left: 10%;
+  }
+  #foot_social {
+    top: 5vh;
+    left: 40%;
+  }
+  #hexa_bee4 {
+    right: 10%;
+    bottom: 2vh;
+  }
+  #header_bee2 {
+    width: 20%;
+  }
+  #clickme2 {
+    display: none;
+  }
+  #get4 {
+    display: none;
+  }
+  #invo4 {
+    display: none;
+  }
+
+}
